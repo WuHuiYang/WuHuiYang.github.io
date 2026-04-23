@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吴辉洋 | AI应用工程师</title>
+  <meta name="description" content="AI应用工程师 · AI全栈开发 · RAG专家 · 企业级AI落地">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Floating nav -->
+  <nav class="floating-nav" id="floatingNav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">吴辉洋</a>
+      <div class="nav-links">
+        <a href="#about" data-section="about">关于</a>
+        <a href="#skills" data-section="skills">技能</a>
+        <a href="#projects" data-section="projects">项目</a>
+        <a href="#experience" data-section="experience">经历</a>
+        <a href="#contact" data-section="contact">联系</a>
+      </div>
+      <a href="https://github.com/WuHuiYang" target="_blank" class="nav-github">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-bg"></div>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <div class="particle-field" id="particleField"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-in">
+        <span class="badge-dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+      <h1 class="hero-title animate-in delay-1">
+        <span class="title-line">你好，我是</span>
+        <span class="title-name">吴辉洋</span>
+      </h1>
+      <p class="hero-subtitle animate-in delay-2">
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </p>
+      <div class="hero-actions animate-in delay-3">
+        <a href="#projects" class="btn btn-primary">
+          <span>查看项目</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary"><span>联系我</span></a>
+        <a href="https://github.com/WuHuiYang" target="_blank" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator animate-in delay-5">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ABOUT ME</span>
+        <h2 class="section-title">关于我</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card about-intro reveal">
+          <div class="about-avatar">
+            <div class="avatar-placeholder">👨‍💻</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-text">
+            <h3>AI 应用工程师 | AI全栈开发工程师</h3>
+            <p>天津科技大学物联网工程本科，<strong>专业排名第一</strong>（GPA 4.1/5.0），获一等奖学金、华为 ICT 大赛二等奖。</p>
+            <p>熟悉主流 AI 技术与应用场景，包括 RAG、Agent、模型微调等；能够熟练使用飞书多维表格、Coze、Dify 等 AI 开发与效率工具平台。具备较强的业务流程分析与优化能力，以及项目推进、跨部门协同落地经验。保持持续学习习惯，长期跟进大模型生态与前沿技术动态。</p>
+            <p>擅长基于现有 AI 生态快速搭建可验证的 Demo 与最小可行方案（MVP），能够将大模型能力快速转化为可演示、可落地的实际应用，注重用 AI 工具链提升方案落地效率与实际使用效果。</p>
+            <div class="about-tags">
+              <span class="tag">🎓 专业排名第一</span>
+              <span class="tag">📊 GPA 4.1/5.0</span>
+              <span class="tag">🏆 华为ICT大赛二等奖</span>
+              <span class="tag">🚀 AI全栈开发</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECH STACK</span>
+        <h2 class="section-title">技术栈</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">🐍</div><h3>编程语言</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-expert">Python</div>
+            <div class="skill-chip skill-familiar">Vue3</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">🤖</div><h3>AI / Agent 框架</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">LangChain</div>
+            <div class="skill-chip skill-proficient">LlamaIndex</div>
+            <div class="skill-chip skill-proficient">Dify</div>
+            <div class="skill-chip skill-proficient">Coze</div>
+            <div class="skill-chip skill-proficient">FastGPT</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">⚡</div><h3>Agent 核心技术</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-expert">Multi-Agent</div>
+            <div class="skill-chip skill-expert">ReAct</div>
+            <div class="skill-chip skill-expert">MCP 协议</div>
+            <div class="skill-chip skill-expert">Function Calling</div>
+            <div class="skill-chip skill-expert">RAG</div>
+            <div class="skill-chip skill-expert">Prompt Engineering</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">🗄️</div><h3>向量数据库 / 存储</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">Chroma</div>
+            <div class="skill-chip skill-proficient">FAISS</div>
+            <div class="skill-chip skill-proficient">Milvus</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">🧠</div><h3>LLM 基础</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-familiar">机器学习</div>
+            <div class="skill-chip skill-familiar">深度学习</div>
+            <div class="skill-chip skill-familiar">Transformer</div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-category-header"><div class="skill-icon">🛠️</div><h3>工程化 & AI 编码</h3></div>
+          <div class="skill-items">
+            <div class="skill-chip skill-proficient">Docker</div>
+            <div class="skill-chip skill-proficient">FastAPI</div>
+            <div class="skill-chip skill-proficient">Git</div>
+            <div class="skill-chip skill-proficient">CI/CD</div>
+            <div class="skill-chip skill-expert">Claude Code</div>
+            <div class="skill-chip skill-expert">Cursor</div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-legend reveal">
+        <span class="legend-item"><span class="legend-dot expert"></span>精通</span>
+        <span class="legend-item"><span class="legend-dot proficient"></span>熟练</span>
+        <span class="legend-item"><span class="legend-dot familiar"></span>熟悉</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EXPERIENCE</span>
+        <h2 class="section-title">工作经历</h2>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-card reveal">
+          <div class="exp-header">
+            <div class="exp-company">
+              <span class="exp-logo">🏭</span>
+              <div>
+                <h3>上汽集团 · 延锋3M事业部</h3>
+                <span class="exp-position">AI数字化工程师</span>
+              </div>
+            </div>
+            <span class="exp-date">2025.07 - 至今</span>
+          </div>
+          <div class="exp-content">
+            <p>专注大模型应用工程化落地，具备从文档处理、向量库构建、检索优化到自动化评估的完整工程能力。主导RAG系统全链路开发与迭代，通过量化评估体系实现数据驱动的持续优化。</p>
+
+            <div class="exp-achievements">
+              <div class="exp-achievement">
+                <div class="exp-achievement-icon">🔧</div>
+                <div class="exp-achievement-content">
+                  <h4>文档处理引擎</h4>
+                  <p>自主设计并实现多格式文档解析与清洗引擎，覆盖 PDF/Word/TXT，解决行业常见的乱码、格式错乱问题；开发分块可视化配置工具，支持块大小、重叠率实时可调，可即时预览分块效果，异常数据快速识别并重新入库，大幅降低 RAG 系统因脏数据导致的效果劣化。</p>
+                </div>
+              </div>
+
+              <div class="exp-achievement">
+                <div class="exp-achievement-icon">🎛️</div>
+                <div class="exp-achievement-content">
+                  <h4>可视化 RAG 策略配置框架</h4>
+                  <p>设计三阶段 RAG 优化架构，封装查询处理（查询重写、多查询扩展、HyDE）、检索增强（BM25 + 向量混合检索、BGE 重排序、多层次检索）、生成优化（上下文压缩、引用溯源、答案自检）三大模块策略，支持可视化动态勾选配置，可快速切换方案并对比效果。</p>
+                </div>
+              </div>
+
+              <div class="exp-achievement">
+                <div class="exp-achievement-icon">📊</div>
+                <div class="exp-achievement-content">
+                  <h4>RAG 效果量化评估体系建设</h4>
+                  <p>搭建RAG量化评估体系，实现忠实度、相关性、精确率、召回率四大指标自动计算；可导入测试集自动化评测并生成可视化报告，解决 RAG 系统 "效果不可衡量、无法迭代" 的行业痛点。</p>
+                </div>
+              </div>
+
+              <div class="exp-achievement">
+                <div class="exp-achievement-icon">🎯</div>
+                <div class="exp-achievement-content">
+                  <h4>RAG 效果诊断与优化链路</h4>
+                  <p>构建从检索→排序→生成→评估→迭代的闭环诊断框架，通过 A/B 测试快速验证不同策略的效果差异，让 RAG 优化从 "凭感觉" 变成 "数据驱动"，最终将问答准确率从 <strong>70% 提升至 88%</strong>。</p>
+                </div>
+              </div>
+
+              <div class="exp-achievement">
+                <div class="exp-achievement-icon">🤖</div>
+                <div class="exp-achievement-content">
+                  <h4>效率与自动化</h4>
+                  <p>结合 AI 能力、飞书多维表格与 RPA 自动化，实现跨部门流程提效，减少重复人工操作，落地企业级 AI 效能提升场景。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="exp-tech">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>LangChain</span>
+              <span>Milvus</span>
+              <span>RAG</span>
+              <span>BGE-M3</span>
+              <span>BM25</span>
+              <span>Reranker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FEATURED PROJECTS</span>
+        <h2 class="section-title">精选项目</h2>
+        <p class="section-desc">从RAG系统到多智能体协作，完整的技术栈覆盖与实战经验</p>
+      </div>
+
+      <!-- Project Showcase Cards -->
+      <div class="projects-showcase">
+
+        <!-- DeepSearch -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="deepsearch-visual">
+              <div class="ds-title">🔍 三智能体协作架构</div>
+              <div class="ds-flow">
+                <div class="ds-node">
+                  <span class="ds-icon">📝</span>
+                  <span class="ds-label">需求分析 Agent</span>
+                  <span class="ds-desc">任务拆解·需求理解</span>
+                </div>
+                <div class="ds-arrow">↓</div>
+                <div class="ds-node">
+                  <span class="ds-icon">🔬</span>
+                  <span class="ds-label">研究执行 Agent</span>
+                  <span class="ds-desc">深度调研·数据收集</span>
+                </div>
+                <div class="ds-arrow">↓</div>
+                <div class="ds-node">
+                  <span class="ds-icon">📊</span>
+                  <span class="ds-label">报告生成 Agent</span>
+                  <span class="ds-desc">结构化输出·Markdown</span>
+                </div>
+              </div>
+              <div class="ds-metrics">
+                <div class="ds-metric">
+                  <span class="ds-metric-val">3-5min</span>
+                  <span class="ds-metric-key">生成时间</span>
+                </div>
+                <div class="ds-metric">
+                  <span class="ds-metric-val">80%+</span>
+                  <span class="ds-metric-key">效率提升</span>
+                </div>
+                <div class="ds-metric">
+                  <span class="ds-metric-val">实时</span>
+                  <span class="ds-metric-key">SSE推送</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars">⭐ GitHub开源</span>
+              <span class="showcase-lang">Python · LangChain · FastAPI</span>
+            </div>
+            <h3>DeepSearch - 自动化深度研究智能体系统</h3>
+            <p>基于<strong>三智能体协作架构</strong>的自动化研究系统，实现从需求输入到结构化报告的端到端自动化。采用LangChain编排，FastAPI提供RESTful API，Vue3 + TypeScript构建前端界面，支持SSE实时进度推送。</p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">3-5min</span><span class="kpi-label">报告生成</span></div>
+              <div class="kpi-item"><span class="kpi-num">80%+</span><span class="kpi-label">效率提升</span></div>
+              <div class="kpi-item"><span class="kpi-num">实时</span><span class="kpi-label">进度推送</span></div>
+            </div>
+            <div class="project-tech"><span>LangChain</span><span>FastAPI</span><span>SSE</span><span>Vue3</span><span>TypeScript</span></div>
+            <a href="https://github.com/" target="_blank" class="showcase-repo-link">→ github.com/yourusername/deepsearch</a>
+          </div>
+        </div>
+
+        <!-- VidNoteK -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="vidnotek-visual">
+              <div class="vn-title">🎬 视频笔记自动生成</div>
+              <div class="vn-flow">
+                <div class="vn-step">
+                  <div class="vn-icon">📥</div>
+                  <div class="vn-label">视频下载</div>
+                  <div class="vn-desc">30+平台支持 · yt-dlp</div>
+                </div>
+                <div class="vn-arrow">↓</div>
+                <div class="vn-step">
+                  <div class="vn-icon">🎯</div>
+                  <div class="vn-label">字幕提取</div>
+                  <div class="vn-desc">三级回退机制 · 稳定保障</div>
+                </div>
+                <div class="vn-arrow">↓</div>
+                <div class="vn-step">
+                  <div class="vn-icon">📝</div>
+                  <div class="vn-label">笔记生成</div>
+                  <div class="vn-desc">13种模板 · AI优化</div>
+                </div>
+                <div class="vn-arrow">↓</div>
+                <div class="vn-step">
+                  <div class="vn-icon">⚡</div>
+                  <div class="vn-label">流式输出</div>
+                  <div class="vn-desc">实时生成 · 高效便捷</div>
+                </div>
+              </div>
+              <div class="vn-highlight">
+                <span class="vn-tag">5分钟/26集</span>
+                <span class="vn-tag">Next.js前端</span>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars">⭐ GitHub开源</span>
+              <span class="showcase-lang">Python · FastAPI · Next.js</span>
+            </div>
+            <h3>VidNoteK - AI视频笔记生成系统</h3>
+            <p>支持<strong>30+视频平台</strong>的AI自动笔记生成系统。采用yt-dlp进行视频解析，OpenAI API进行内容处理，Next.js构建响应式前端。设计三级字幕回退机制确保功能稳定，可扩展模板系统支持13种笔记格式。</p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">5min</span><span class="kpi-label">26集笔记</span></div>
+              <div class="kpi-item"><span class="kpi-num">30+</span><span class="kpi-label">平台支持</span></div>
+              <div class="kpi-item"><span class="kpi-num">13</span><span class="kpi-label">笔记格式</span></div>
+            </div>
+            <div class="project-tech"><span>FastAPI</span><span>Docker</span><span>OpenAI API</span><span>yt-dlp</span><span>Next.js</span></div>
+            <a href="https://github.com/" target="_blank" class="showcase-repo-link">→ github.com/yourusername/vidnotek</a>
+          </div>
+        </div>
+
+        <!-- 简历分析系统 -->
+        <div class="showcase-card reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="resume-visual">
+              <div class="resume-title">📄 智能简历分析系统</div>
+              <div class="resume-flow">
+                <div class="resume-step resume-step-1">
+                  <div class="resume-num">①</div>
+                  <div class="resume-content">
+                    <div class="resume-name">简历解析</div>
+                    <div class="resume-desc">多格式输入 · 信息提取</div>
+                  </div>
+                </div>
+                <div class="resume-step resume-step-2">
+                  <div class="resume-num">②</div>
+                  <div class="resume-content">
+                    <div class="resume-name">JD匹配</div>
+                    <div class="resume-desc">语义级匹配 · 技能对齐</div>
+                  </div>
+                </div>
+                <div class="resume-step resume-step-3">
+                  <div class="resume-num">③</div>
+                  <div class="resume-content">
+                    <div class="resume-name">报告生成</div>
+                    <div class="resume-desc">结构化输出 · 评分建议</div>
+                  </div>
+                </div>
+              </div>
+              <div class="resume-features">
+                <span class="resume-feat">FastGPT工作流</span>
+                <span class="resume-feat">RAG增强</span>
+                <span class="resume-feat">语义匹配</span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars">💼 企业级应用</span>
+              <span class="showcase-lang">FastGPT · RAG · Prompt</span>
+            </div>
+            <h3>智能简历分析系统</h3>
+            <p>面向HR初筛场景的AI分析Agent，基于<strong>FastGPT工作流编排</strong>实现简历解析、JD匹配、报告生成全流程自动化。采用语义级技能匹配替代传统关键词检索，显著提升匹配准确性。</p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">70%</span><span class="kpi-label">效率提升</span></div>
+              <div class="kpi-item"><span class="kpi-num">语义</span><span class="kpi-label">技能匹配</span></div>
+              <div class="kpi-item"><span class="kpi-num">自动化</span><span class="kpi-label">全流程</span></div>
+            </div>
+            <div class="project-tech"><span>FastGPT</span><span>RAG</span><span>Prompt Engineering</span><span>工作流编排</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">联系我</h2>
+        <p class="section-desc">正在寻找AI领域的挑战机会，期待与你交流</p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:ryanwuvii@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>邮箱</h3>
+          <p>ryanwuvii@gmail.com</p>
+        </a>
+        <a href="tel:18750851309" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>电话</h3>
+          <p>18750851309</p>
+        </a>
+        <div class="contact-card contact-wechat reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.062-6.122zM14.84 13.186c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982z"/></svg>
+          </div>
+          <h3>微信</h3>
+          <p>hyanvii</p>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>位置</h3>
+          <p>中国 · 苏州</p>
+        </div>
+      </div>
+      <div class="contact-cta reveal">
+        <div class="cta-card">
+          <h3>期待与你合作</h3>
+          <p>如果你对RAG系统、多智能体协作、AI应用落地等领域感兴趣，欢迎随时联系我！</p>
+          <div class="cta-info">
+            <span>🎓 2025届毕业生</span>
+            <span>🚀 AI全栈开发</span>
+            <span>💼 开放机会</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">吴辉洋</span>
+          <p>AI应用工程师 & AI全栈开发工程师</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/WuHuiYang" target="_blank">GitHub</a>
+          <a href="mailto:ryanwuvii@gmail.com">Email</a>
+          <a href="#contact">联系我</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 吴辉洋. Built with passion & AI.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
