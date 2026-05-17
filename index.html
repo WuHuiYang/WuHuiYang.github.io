@@ -209,7 +209,7 @@
                 <div class="exp-achievement-icon">🎛️</div>
                 <div class="exp-achievement-content">
                   <h4>可视化RAG策略配置框架</h4>
-                  <p>搭建向量+BM25双路混合检索体系，落地工业级检索流水线：粗量召回、多轮阈值过滤、RRF加权融合、重排精筛、兜底生成全链路闭环。集成查询重写、HyDE假想检索、语义扩展等问句增强策略，支持全链路策略开关化、参数可配置化，能够快速切换方案、横向对比，高效解决口语化提问、语义模糊、匹配偏差、语义漂移等问题，严控大模型幻觉输出。</p>
+                  <p>搭建向量+BM25双路混合检索体系，落地工业级检索流水线：粗量召回、多轮阈值过滤、RRF加权融合、重排精筛、兜底生成全链路闭环。集成查询重写、HyDE假想检索、语义扩展等问句增强策略，支持链路策略开关化、参数可配置化，能够快速切换方案、横向对比，高效解决口语化提问、语义模糊、匹配偏差、语义漂移等问题，严控大模型幻觉输出。</p>
                 </div>
               </div>
 
@@ -430,6 +430,64 @@
               <div class="kpi-item"><span class="kpi-num">自动化</span><span class="kpi-label">全流程</span></div>
             </div>
             <div class="project-tech"><span>FastGPT</span><span>RAG</span><span>Prompt Engineering</span><span>工作流编排</span></div>
+          </div>
+        </div>
+
+        <!-- 多智能体协同开发系统 -->
+        <div class="showcase-card showcase-card-reverse reveal">
+          <div class="showcase-image showcase-image-code">
+            <div class="multiagent-visual">
+              <div class="ma-title">🤝 多智能体协同架构</div>
+              <div class="ma-flow">
+                <div class="ma-orchestrator">
+                  <span class="ma-icon">🧠</span>
+                  <span class="ma-label">主智能体</span>
+                  <span class="ma-desc">任务编排·状态管理</span>
+                </div>
+                <div class="ma-agents">
+                  <div class="ma-agent ma-agent-planner">
+                    <span class="ma-icon">📋</span>
+                    <span class="ma-label">sw-planner</span>
+                    <span class="ma-desc">需求分析·制定计划</span>
+                  </div>
+                  <div class="ma-agent ma-agent-dev">
+                    <span class="ma-icon">💻</span>
+                    <span class="ma-label">sw-dev</span>
+                    <span class="ma-desc">模块开发·修正代码</span>
+                  </div>
+                  <div class="ma-agent ma-agent-tester">
+                    <span class="ma-icon">🧪</span>
+                    <span class="ma-label">sw-tester</span>
+                    <span class="ma-desc">代码审查·集成测试</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ma-loop">
+                <span class="ma-loop-text">需求 → 计划 → 开发 → 测试 → 修正循环（最多5轮）</span>
+              </div>
+              <div class="ma-highlight">
+                <span class="ma-tag">3条铁律</span>
+                <span class="ma-tag">3层日志</span>
+              </div>
+            </div>
+            <div class="showcase-overlay">
+              <a href="https://github.com/WuHuiYang/multi-agents-devteam" target="_blank" class="showcase-btn">查看仓库</a>
+            </div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-meta">
+              <span class="showcase-stars">⭐ GitHub开源</span>
+              <span class="showcase-lang">Claude Code Agent SDK · Bash · Git</span>
+            </div>
+            <h3>Multi-Agent DevTeam - 多智能体协同开发系统</h3>
+            <p>基于<strong>Claude Code子智能体机制</strong>的多角色协同软件开发框架。通过主智能体编排 + 专业化子智能体（sw-planner、sw-dev、sw-tester）的模式，实现结构化开发流程。设计三条铁律（文件即记忆、隔离即常态、记录即保险）确保子智能体协作的可靠性与可追溯性。</p>
+            <div class="showcase-kpis">
+              <div class="kpi-item"><span class="kpi-num">4</span><span class="kpi-label">专业角色</span></div>
+              <div class="kpi-item"><span class="kpi-num">5轮</span><span class="kpi-label">修正循环</span></div>
+              <div class="kpi-item"><span class="kpi-num">3层</span><span class="kpi-label">日志架构</span></div>
+            </div>
+            <div class="project-tech"><span>Claude Code</span><span>Agent SDK</span><span>Multi-Agent</span><span>Bash</span><span>Git</span></div>
+            <a href="https://github.com/WuHuiYang/multi-agents-devteam" target="_blank" class="showcase-repo-link">→ github.com/WuHuiYang/multi-agents-devteam</a>
           </div>
         </div>
 

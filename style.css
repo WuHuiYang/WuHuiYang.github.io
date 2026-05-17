@@ -279,6 +279,31 @@ body:hover .cursor-glow { opacity: 1; }
 .exp-tech { display: flex; flex-wrap: wrap; gap: 6px; }
 .exp-tech span { padding: 4px 10px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15); border-radius: var(--radius-full); font-size: 11px; color: var(--accent-blue-light); font-family: var(--font-mono); }
 
+
+/* ============================================
+   Multi-Agent Visual Styles
+   ============================================ */
+.multiagent-visual, .ma-title, .ma-flow, .ma-orchestrator, .ma-agents, .ma-agent, .ma-loop, .ma-highlight { width: 100%; }
+.ma-title { text-align: center; font-size: 13px; font-weight: 700; color: var(--accent-purple); margin-bottom: 14px; }
+.ma-flow { display: flex; flex-direction: column; gap: 8px; width: 100%; }
+.ma-orchestrator { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 10px 14px; border-radius: var(--radius-md); border: 1px solid rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.08); }
+.ma-orchestrator .ma-icon { font-size: 1.5rem; }
+.ma-orchestrator .ma-label { font-size: 12px; font-weight: 700; color: var(--text-primary); }
+.ma-orchestrator .ma-desc { font-size: 10px; color: var(--text-tertiary); }
+.ma-agents { display: flex; gap: 6px; }
+.ma-agent { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 8px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background: rgba(255,255,255,0.03); transition: border-color var(--transition-fast); flex: 1; }
+.ma-agent:hover { border-color: var(--accent-purple); }
+.ma-agent .ma-icon { font-size: 1.2rem; }
+.ma-agent .ma-label { font-size: 10px; font-weight: 700; color: var(--text-primary); }
+.ma-agent .ma-desc { font-size: 9px; color: var(--text-tertiary); text-align: center; }
+.ma-agent-planner { border-left: 2px solid var(--accent-blue); }
+.ma-agent-dev { border-left: 2px solid var(--accent-green); }
+.ma-agent-tester { border-left: 2px solid var(--accent-orange); }
+.ma-loop { text-align: center; padding: 6px 10px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px dashed var(--border-subtle); }
+.ma-loop-text { font-size: 10px; color: var(--text-tertiary); font-family: var(--font-mono); }
+.ma-highlight { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+.ma-tag { padding: 4px 12px; background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: var(--radius-full); font-size: 11px; color: #a78bfa; }
+
 /* ============================================
    Contact
    ============================================ */
